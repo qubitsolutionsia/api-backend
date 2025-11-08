@@ -38,7 +38,7 @@ const app = express();
 app.use(helmet());
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
-    ? 'https://consulor-ia.web.app'
+    ? 'https://qubitapp.web.app/'
     : '*',
   methods: ['GET', 'POST', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'x-tenant-id', 'x-api-key', 'x-demo-token', 'x-client-id', 'x-request-source']
